@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sprawdzian14._03Badowski4c.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <GraphicsView 
+                x:Name="GraphView"
+                WidthRequest="400"
+                HeightRequest="300"/>
+
+            <ListView 
+                x:Name="ksztalt"
+                ItemSelected="wybrany"
+                />
+
+            <Slider 
+                x:Name="wielkosc"
+                ValueChanged="zmiana"
+                Maximum="290"
+                Minimum="0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
